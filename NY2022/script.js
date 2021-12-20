@@ -1,12 +1,12 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.135.0";
 import {
-BloomEffect,
-EffectComposer,
-EffectPass,
-RenderPass,
-BlendFunction,
-KernelSize } from
-"https://cdn.skypack.dev/postprocessing";
+  BloomEffect,
+  EffectComposer,
+  EffectPass,
+  RenderPass,
+  BlendFunction,
+  KernelSize
+} from "https://cdn.skypack.dev/postprocessing";
 import { gsap } from "https://cdn.skypack.dev/gsap@3.8.0";
 
 class World {
