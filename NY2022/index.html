@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - xMAS Tree</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://use.typekit.net/bji5ovt.css"><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <canvas class="webgl"></canvas>
 <h1><small>Merry Christmas</small> And Happy New 2022 year!
   <p><small>by</small> Kocheshev Kirill</p>
 </h1>
 <button id="play-music" type="button">Play music</button>
-<script type="x-shader/x-vertex" id="vertexShader" src="./script.js">>
-uniform float uTime;
+<script type="x-shader/x-vertex" id="vertexShader">
+  uniform float uTime;
 uniform float uSize;
 attribute float aScale;
 attribute vec3 aColor;
@@ -198,8 +187,3 @@ void main() {
   gl_FragColor = vec4(mix(vec3(uv, 1.0), vec3(0.0, 1.0, 1.0), 1.0 - n*n) , n * n * n );
 }
 </script>
-<!-- partial -->
-  <script type="module" src="./script.js"></script>
-
-</body>
-</html>
