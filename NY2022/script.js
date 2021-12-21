@@ -1,4 +1,4 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.135.0";
+import THREE from "https://cdn.skypack.dev/three";
 import {
   BloomEffect,
   EffectComposer,
